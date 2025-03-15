@@ -1,0 +1,9 @@
+services: 
+  challenge-two-pg:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=challenge-username
+      - POSTGRESQL_PASSWORD=challenge-password
+      - POSTGRESQL_DATABASE=challenge-database
